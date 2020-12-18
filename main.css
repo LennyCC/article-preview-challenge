@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(214, 17%, 51%);
+}
+
+p {
+    font-size: 13px;
+}
+
+h4,
+h6 {
+    color: hsl(217, 19%, 35%);
+}
+
+.article {
+    margin: 4rem 2rem;
+    background-color: white;
+}
+
+.imagen {
+    height: 200px;
+    width: 100%;
+}
+
+.content {
+    padding: 1rem 0rem;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+/*Container prev*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "img info button";
+    background-color:white;
+    padding-bottom: 5px;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+}
+
+.button {
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-image {
+    width: 40px;
+    border-radius: 150px;
+}
+
+.icon-share{
+    background-color:hsl(210, 46%, 95%);
+    padding:8px;
+    border-radius: 150px;
+    width: 30px;
+}
+.info h6{
+margin: 0;
+}
+.info p{
+margin: 0;
+}
+
+/*Container next*/
+
+.grid-container-social {
+    display: none;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "share social button";
+    background-color:hsl(217, 19%, 35%);
+    padding-bottom: 5px;
+}
+
+.social {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social img{
+    height: 15px;
+    padding: 0rem 0.3rem;
+}
+.share {
+    grid-area: share;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(210, 46%, 95%);
+    margin-left: 32px;
+}
+
+.button {
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing:5px;
+}
+
+.icon-share{
+    background-color:hsl(212, 23%, 69%);
+    padding:8px;
+    border-radius: 150px;
+    width: 30px;
+    margin-right: 32px;
+}
+
+
